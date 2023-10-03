@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Campuses</title>
+
+    <style>
+
+        body{
+            margin: 0;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+        
+        .intro h1{
+            text-align: center;
+            color: #ff7200;
+            font-size: 2.2em;
+            font-family: Arial, Helvetica, sans-serif;
+            background: grey;
+        }
+
+        .main{
+            margin: 5px;
+            width: 100vw;
+            height: auto;
+            display: block;
+            overflow: hidden;
+            background: grey;
+        }
+        
+        .campus-container{
+            background-color: blanchedalmond;
+            width: 400px;
+            height: auto;
+            float: left;
+            margin: 10px 20px;
+            padding-top: 20px;
+            border-radius: 5px;
+            
+        }
+
+        .campus-container img{
+            max-width: 85%;
+            border-radius: 5px;
+            margin: 7.5%;
+        }
+
+        .campus-container figcaption{
+            text-align: center;
+            font-size: 2em;
+            padding-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ff7200;
+        }
+
+        .footer{
+            width: 100vw;
+            height: auto;
+            text-align: center;
+            background-color: rgb(77, 76, 76);
+        }
+
+        .footer h2{
+            padding-top: 10px;
+            font-size: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .icons ion-icon{
+            font-size: 2.5em;
+            padding: 10px;
+            color: #ffffff;
+            transition: color .3s ease;
+        }
+
+        .icons ion-icon:hover{
+            color: #ff7200;
+        }
+
+        @media screen and (max-width: 460px){
+
+            .campus-container{
+                width: 250px;
+                margin: 20px;
+            }
+
+            footer h2{
+            font-size: 1em;
+            padding: 10px;
+        }
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="intro">
+    <h1>Visit any of our Campuses</h>
+    </div>
+
+    <section class="main">
+                
+        <div class="campus-container">
+            <img src="images/campus1.jpg" alt="campus-img">
+            <figcaption>Main Campus</figcaption>
+        </div>
+
+        <div class="campus-container">
+            <img src="images/campus2.jpg" alt="campus-img">
+            <figcaption>Town Campus</figcaption>
+        </div>
+
+        <div class="campus-container">
+            <img src="images/campus3.jpg" alt="campus-img">
+            <figcaption>City Campus</figcaption>
+        </div>
+
+        <div class="campus-container">
+            <img src="images/campus4.jpg" alt="campus-img">
+            <figcaption>College Campus</figcaption>
+        </div>
+    </section>
+    
+    <section class="footer">
+            <h2>Yator Kipngetich Enock</h2>
+            <h2>COM/M/0038/2021</h2>
+            <h3>Follow me on:</h3>
+    
+            <div class="icons">
+                <a href="https://www.facebook.com/enock.yator.77?mibextid=cejktS"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+    
+            </div>
+        </section>   
+</body>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</html>

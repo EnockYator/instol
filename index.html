@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PraRoz</title>
+	<link rel="stylesheet" href="./style.css">
+
+
+	<style>
+
+		/***_____courses_______**/
+
+		*{
+            margin: 0;
+        }
+        
+        body{
+            box-sizing: border-box;
+            display: block;
+        }
+
+        .cos-sec{
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        .intro h1{
+            text-align: center;
+            font-size: 2.5em;
+            padding: 30px;
+            font-weight: bolder;
+            color: #ff7200;
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        .intro p{
+            font-size: 1.2em;
+            letter-spacing: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+        }
+
+        .intro a{
+            text-decoration: none;
+            transition: color, .3s ease;
+        }
+
+        .intro a:hover{
+            color: rgb(112, 250, 0);
+        }
+
+        .cos-row{
+            display: block;
+            align-items: flex-start;
+            flex-direction: row;
+            margin: 5px;
+            
+        }
+
+        .cos-col{
+            float: left;
+            background-color: rgb(199, 198, 198);
+            margin: 5px;
+            margin-left: 25px;
+            overflow: hidden;
+            
+            @media screen and (max-width:600px){
+                margin-left: 0;
+            }
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        .cos-row h2{
+            text-align: center;
+            margin: 10px;
+        }
+
+        .cos-col{
+            text-align: left;
+        }
+
+        .cos-col table{
+            border-top: 2px solid rgba(233, 231, 231, 0.966);
+        }
+
+
+        /*_______Campus_______*/
+
+        .campus-sec{
+            float: left;
+        }
+
+        .campus-sec .intro h1{
+            text-align: center;
+            color: #ff7200;
+            font-size: 2.2em;
+            font-family: Arial, Helvetica, sans-serif;
+            background: grey;
+        }
+
+        .campus-sec .main{
+            margin: 5px;
+            width: 100vw;
+            height: auto;
+            display: block;
+            overflow: hidden;
+            background: grey;
+        }
+        
+        .campus-container{
+            background-color: blanchedalmond;
+            width: 400px;
+            height: auto;
+            float: left;
+            margin: 10px 20px;
+            padding-top: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .campus-container img{
+            max-width: 85%;
+            border-radius: 5px;
+            margin: 7.5%;
+            
+        }
+
+        .campus-container figcaption{
+            text-align: center;
+            font-size: 2em;
+            padding-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ff7200;
+        }
+
+
+        @media screen and (max-width: 460px){
+            .campus-container{
+                width: 250px;
+                margin: 20px;
+            }
+            .footer h2{
+                font-size: 1em;
+                padding: 10px;
+            }
+        }
+
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="navbar">
+			<div class="icon">
+				<h2 class="logo">PraRoz</h2>
+			</div>
+			
+			<div class="menu">
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="courses.html" target="_top">COURSES</a></li>
+					<li><a href="campuses.html">CAMPUSES</a></li>
+					<li><a href="login.html">LOGIN</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="search">
+				<input class="srch" type="search" name="" placeholder="&#128269; Search">
+				<a href="#">  <button class="btn">Search</button></a>
+			</div>
+		</div>
+		<div class="content">
+			
+			<h1>Web Design &<br><span>Development</span><br>Course</h1>
+			<p class="par">
+				Web Design is a specialization of the design stream.They also use HTML,<br>
+				CSS, WYSIWYG editing software, mark up validators etc<br>
+				to create design elements.
+			</p>
+			
+			<a href="#"><button class="btn-join">JOIN US</button></a>
+
+			</div>
+		</div>
+	</div> 
+
+
+	<div class="cos-sec">
+        <div class="intro">
+            <h1>Courses We Offer</h1>
+            <p>
+                We offer a variety of tech courses across all our campuses,<br>
+                <a href="contact.html"><i><b> Register now</b></i></a> and enroll in one of our courses. <br>
+                For more information,<a href="contact.html"><i><b> Contact us</b></i></a>.
+            </p>
+
+            <div class="cos-row">
+                <div class="cos-col">
+                    <h2>Diploma</h2>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>Course</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Diploma in Cyber Security</td>
+                            <td>1 year</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Diploma in Web Design</td>
+                            <td>1 year</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Diploma in Web Development</td>
+                            <td>1 year</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Diploma in Data Science</td>
+                            <td>1 year</td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>Diploma in Artificial Intelligence</td>
+                            <td>1 year</td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>Diploma Robotics & Mechatronics</td>
+                            <td>1 year</td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <td>Diploma in Machine Learning</td>
+                            <td>1 year</td>
+                        </tr>
+                        <tr>
+                            <td>8.</td>
+                            <td>Diploma in Cloud Computing</td>
+                            <td>1 year</td>
+                        </tr>
+                        <tr>
+                            <td>9.</td>
+                            <td>Diploma in Linux Administration</td>
+                            <td>1 year</td>
+                        </tr>
+                        <tr>
+                            <td>10.</td>
+                            <td>Diploma in Mobile App Development</td>
+                            <td>1 year</td>
+                        </tr>
+                        <tr>
+                            <td>11.</td>
+                            <td>Diploma in Software Engineering</td>
+                            <td>1 year</td>
+                        </tr>
+                        <tr>
+                            <td>12.</td>
+                            <td>Diploma in System Development</td>
+                            <td>1 year</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cos-col">
+                    <h2>Bachelors Degree</h2>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>Course</th>
+                            <th>Duration</th>
+                        </tr>
+
+                        <tr>
+                            <td>1.</td>
+                            <td>Bachelors Degree in Cyber Security</td>
+                            <td>4 years</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Bachelors Degree in Web Design</td>
+                            <td>4 years</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Bachelors Degree in Web Development</td>
+                            <td>4 years</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Bachelors Degree in Data Science</td>
+                            <td>4 years</td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>Bachelors Degree in Artificial Intelligence</td>
+                            <td>4 years</td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>Bachelors Degree in Robotics & Mechatronics</td>
+                            <td>4 years</td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <td>Bachelors Degree in Machine Learning</td>
+                            <td>4 years</td>
+                        </tr>
+                        <tr>
+                            <td>8.</td>
+                            <td>Bachelors Degree in Cloud Computing</td>
+                            <td>4 years</td>
+                        </tr>
+                        <tr>
+                            <td>9.</td>
+                            <td>Bachelors Degree in Linux Administration</td>
+                            <td>4 years</td>
+                        </tr>
+                        <tr>
+                            <td>10.</td>
+                            <td>Bachelors Degree in Mobile App Development</td>
+                            <td>4 years</td>
+                        </tr>
+                        <tr>
+                            <td>11.</td>
+                            <td>Bachelors Degree in Software Engineering</td>
+                            <td>4 years</td>
+                        </tr>
+                        <tr>
+                            <td>12.</td>
+                            <td>Bachelors Degree in System Development</td>
+                            <td>4 years</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cos-col">
+                    <h2>Masters Degree</h2>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>Course</th>
+                            <th>Duration</th>
+                        </tr>
+
+                        <tr>
+                            <td>1.</td>
+                            <td>Masters Degree in Cyber Security</td>
+                            <td>2 years</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Masters Degree in Web Design</td>
+                            <td>2 years</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Masters Degree in Web Development</td>
+                            <td>2 years</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Masters Degree in Data Science</td>
+                            <td>2 years</td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>Masters Degree in Artificial Intelligence</td>
+                            <td>2 years</td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>Masters Degree in Robotics & Mechatronics</td>
+                            <td>2 years</td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <td>Masters Degree in Machine Learning</td>
+                            <td>2 years</td>
+                        </tr>
+                        <tr>
+                            <td>8.</td>
+                            <td>Masters Degree in Cloud Computing</td>
+                            <td>2 years</td>
+                        </tr>
+                        <tr>
+                            <td>9.</td>
+                            <td>Masters Degree in Linux Administration</td>
+                            <td>2 years</td>
+                        </tr>
+                        <tr>
+                            <td>10.</td>
+                            <td>Masters Degree in Mobile App Development</td>
+                            <td>2 years</td>
+                        </tr>
+                        <tr>
+                            <td>11.</td>
+                            <td>Masters Degree in Software Engineering</td>
+                            <td>2 years</td>
+                        </tr>
+                        <tr>
+                            <td>12.</td>
+                            <td>Masters Degree in System Development</td>
+                            <td>2 years</td>
+                        </tr>
+                    </table>
+                </div>
+                    
+                
+            </div>
+        </div>
+        
+    </div>
+
+
+    <div class="campus-sec">
+        <sectiion class="intro">
+        <h1>Visit any of our Campuses</h1>
+        </section>
+    
+        <section class="main">
+                    
+            <div class="campus-container">
+                <img src="images/campus1.jpg" alt="campus-img">
+                <figcaption>Main Campus</figcaption>
+            </div>
+    
+            <div class="campus-container">
+                <img src="images/campus2.jpg" alt="campus-img">
+                <figcaption>Town Campus</figcaption>
+            </div>
+    
+            <div class="campus-container">
+                <img src="images/campus3.jpg" alt="campus-img">
+                <figcaption>City Campus</figcaption>
+            </div>
+    
+            <div class="campus-container">
+                <img src="images/campus4.jpg" alt="campus-img">
+                <figcaption>College Campus</figcaption>
+            </div>
+        </section>
+    </div>
+
+    <div class="footer">
+        <h2>Yator Kipngetich Enock</h2>
+        <h2>COM/M/0038/2021</h2>
+        <h3>Follow me on:</h3>
+
+        <div class="icons">
+            <a href="https://www.facebook.com/enock.yator.77?mibextid=cejktS"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+
+        </div>
+    </div>
+
+</body>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</html>
+  
